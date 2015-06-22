@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Serilog.Sinks.OrientDB</id>
+    <version>$version$</version>
+    <authors>Michael Davidson, Donovan Crone</authors>
+    <description>Serilog sink that writes to OrientDB.</description>
+    <language>en-US</language>
+    <projectUrl>http://serilog.net</projectUrl>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <iconUrl>http://serilog.net/images/serilog-sink-seq-nuget.png</iconUrl>
+    <dependencies>
+      <group targetFramework="net40">
+        <dependency id="Serilog" version="1.5.1" />
+        <dependency id="Microsoft.Net.Http" version="2.2.20" />
+      </group>
+      <group targetFramework="net45">
+        <dependency id="Serilog" version="1.5.1" />
+      </group>
+    </dependencies>
+    <tags>serilog OrientDB structured logging</tags>
+  </metadata>
+  <files>
+    <file src="bin\Release\Serilog.Sinks.OrientDB.dll" target="lib\net45" />
+    <file src="bin\Release\Serilog.Sinks.OrientDB.xml" target="lib\net45" />
+    <file src="bin\Release\Serilog.Sinks.OrientDB.pdb" target="lib\net45" />
+    <!--<file src="bin40\Release\Serilog.Sinks.OrientDB.dll" target="lib\net40" />
+    <file src="bin40\Release\Serilog.Sinks.OrientDB.xml" target="lib\net40" />
+    <file src="bin40\Release\Serilog.Sinks.OrientDB.pdb" target="lib\net40" />-->
+  </files>
+</package>
