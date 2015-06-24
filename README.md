@@ -8,7 +8,9 @@ Add to your LoggingConfiguration:
 We recommend a new database for logging instead of using a preexisting one as there are database level requirements.
 
 The database that you provide via databaseName should already exist and two ALTER DATABASE commands need to be ran:
+````SQL
 ALTER DATABASE DATETIMEFORMAT yyyy-MM-dd'T'HH:mm:ss.SSS
 ALTER DATABASE TIMEZONE UTC
+```
 
 The sink will automatically define an appropriate class (LogEvent by default) with appropriate schema.
