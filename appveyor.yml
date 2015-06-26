@@ -19,3 +19,9 @@ build:
   publish_nuget: true
   publish_nuget_symbols: true
   verbosity: minimal
+deploy:
+- provider: NuGet
+  api_key:
+    secure: c6WtVY4F4CeU6te7+vPCFHjcjLWIqwyBGTnuP/yQDy9DqZ0rqdAdI4Wz7lcLydd/
+  on:
+    branch: master
