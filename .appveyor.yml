@@ -1,0 +1,21 @@
+version: 0.1.0.{build}
+os: Visual Studio 2015 RC
+configuration: Release
+platform: Any CPU
+assembly_info:
+  patch: true
+  file: '**\CommonAssemblyInfo.*'
+  assembly_version: '{version}'
+  assembly_file_version: '{version}'
+  assembly_informational_version: '{version}'
+install:
+- set PATH=C:\Program Files (x86)\MSBuild\14.0\Bin;%PATH%
+nuget:
+  account_feed: true
+  project_feed: true
+before_build:
+- nuget restore src\Serilog.Sinks.OrientDB.sln
+build:
+  publish_nuget: true
+  publish_nuget_symbols: true
+  verbosity: minimal
