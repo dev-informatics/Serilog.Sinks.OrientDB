@@ -1,4 +1,5 @@
 # Serilog.Sinks.OrientDB
+[![Build status](https://ci.appveyor.com/api/projects/status/1chwti46dk8812rb/branch/master?svg=true)](https://ci.appveyor.com/project/psibernetic/serilog-sinks-orientdb/branch/master)
 
 ##Usage
 Add to your LoggingConfiguration:
