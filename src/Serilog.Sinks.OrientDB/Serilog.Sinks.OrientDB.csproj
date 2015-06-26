@@ -41,7 +41,7 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>..\Serilog.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>Properties\Serilog.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Serilog, Version=1.5.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
@@ -73,11 +73,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\Serilog.snk">
-      <Link>Properties\Serilog.snk</Link>
-    </None>
     <None Include="packages.config" />
     <None Include="Serilog.Sinks.OrientDB.nuspec" />
+    <None Include="Properties\Serilog.snk" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="JsonData.resx">

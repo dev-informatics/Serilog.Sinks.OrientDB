@@ -6,9 +6,9 @@
     <authors>Michael Davidson, Donovan Crone</authors>
     <description>Serilog sink that writes to OrientDB.</description>
     <language>en-US</language>
-    <projectUrl>http://serilog.net</projectUrl>
+    <projectUrl>https://github.com/dev-informatics/Serilog.Sinks.OrientDB</projectUrl>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
-    <iconUrl>http://serilog.net/images/serilog-sink-seq-nuget.png</iconUrl>
+    <iconUrl>http://serilog.net/images/serilog-sink-nuget.png</iconUrl>
     <dependencies>
       <group targetFramework="net45">
         <dependency id="Serilog" version="1.5.1" />
